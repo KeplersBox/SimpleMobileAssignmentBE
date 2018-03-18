@@ -92,8 +92,7 @@ exports.getUserByEmail = function get(req,res,next){
 
             if(!user.email){
 
-                res.status(400).json({
-                    error : true,
+                res.status(201).json({
                     message :'No user found'
                 });
 
